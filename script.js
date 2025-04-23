@@ -98,6 +98,9 @@ if (dragCard) {
       const cardsInsert = document.querySelector(selector);
       cardsInsert.insertAdjacentHTML("beforeend", `
         <div class="kanban-card" draggable="true">
+          <button class="btn-remover" title="Remover card">
+                        <i class="fa-solid fa-trash"></i>
+          </button>
           <div class="badge ${dadosPrioridade}">
             <span>${dadosPrioridadeNovo}</span>
           </div>
@@ -126,29 +129,7 @@ if (dragCard) {
       modalCard.close();
       limparInputs();
     }
-    
-    
-    function inserirCard(selector) {
-      const cardsInsert = document.querySelector(selector);
-      cardsInsert.insertAdjacentHTML("beforeend", `
-        <div class="kanban-card" draggable="true">
-          <div class="badge ${dadosPrioridade}">
-            <span>${dadosPrioridadeNovo}</span>
-          </div>
-          <p class="card-title">${dadosTarefa}</p>
-          <div class="card-infos">
-            <div class="card-icons">
-              <p><i class="fa-solid fa-comment"></i> 1</p>
-              <p><i class="fa-solid fa-paperclip"></i> 1</p>
-            </div>
-            <div class="user">
-              <img src="https://github.com/iigorvidall.png" alt="Perfil de Igor Vidal">
-            </div>
-          </div>
-        </div>
-      `);
-    
-      // Precisa adicionar event listeners para drag n drop após novo card ser inserido
+
       document.querySelectorAll('.kanban-card').forEach(card => {
         card.addEventListener('dragstart', e => {
           e.currentTarget.classList.add('dragging');
