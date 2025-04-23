@@ -346,7 +346,6 @@
     body{
       flex-direction: column-reverse;
       height: 95vh;
-      overflow-y: hidden;
     }
 
     .sidebar picture{
