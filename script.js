@@ -98,6 +98,9 @@ if (dragCard) {
       const cardsInsert = document.querySelector(selector);
       cardsInsert.insertAdjacentHTML("beforeend", `
         <div class="kanban-card" draggable="true">
+        <button class="btn-remover" title="Remover card">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
           <div class="badge ${dadosPrioridade}">
             <span>${dadosPrioridadeNovo}</span>
           </div>
@@ -138,7 +141,7 @@ function adicionarEventoRemover() {
     });
   });
 }
-
+/*
 adicionarEventoRemover();
 
 function debounce(func, delay) {
@@ -148,6 +151,7 @@ function debounce(func, delay) {
     timer = setTimeout(func, delay);
   };
 }
+
 
 
 
@@ -197,3 +201,5 @@ document.addEventListener("DOMContentLoaded", () => {
     attributes: true
   });
 });
+
+*/
