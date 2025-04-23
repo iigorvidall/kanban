@@ -368,7 +368,6 @@
       height: 60px;
       justify-content: space-around;
       align-items: center;
-      z-index: 999;
       box-shadow: 10px 4px 10px 8px #2e2e2e41;
       gap: 0px;
     }
