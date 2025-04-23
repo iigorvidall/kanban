@@ -386,6 +386,7 @@
 
     .kanban{
       padding-top: 10px;
+      height: 100% !important;
     }
 
     .fa-gear{
