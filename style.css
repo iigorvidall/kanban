@@ -321,6 +321,10 @@
     transition: 0.1s ease-in-out;
   }
 
+  .kanban-card:hover{
+    cursor: grab;
+  }
+
   .kanban-card:hover .btn-remover{
     opacity: 1;
   }

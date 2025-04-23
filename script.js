@@ -139,20 +139,61 @@ function adicionarEventoRemover() {
   });
 }
 
-// Chamada inicial para os cards existentes:
 adicionarEventoRemover();
 
+function debounce(func, delay) {
+  let timer;
+  return function () {
+    clearTimeout(timer);
+    timer = setTimeout(func, delay);
+  };
+}
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const kanban = document.querySelector("main.kanban");
 
+  const htmlSalvo = localStorage.getItem("kanbanHTML");
+  if (htmlSalvo) {
+    kanban.innerHTML = htmlSalvo;
 
+    // 🔁 Reatribui eventos de drag nos cards restaurados
+    document.querySelectorAll('.kanban-card').forEach(card => {
+      card.addEventListener('dragstart', e => {
+        e.currentTarget.classList.add('dragging');
+      });
+      card.addEventListener('dragend', e => {
+        e.currentTarget.classList.remove('dragging');
+      });
+    });
 
+    // 🔁 Reatribui evento de remoção nos botões de lixeira
+    adicionarEventoRemover();
+  }
 
+  // 🔁 Debounce para evitar salvar o tempo todo
+  function debounce(func, delay) {
+    let timer;
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(func, delay);
+    };
+  }
 
+  const salvarKanbanHTML = debounce(() => {
+    localStorage.setItem("kanbanHTML", kanban.innerHTML);
+  }, 500);
 
-  
+  // 🔍 Observa alterações no DOM para salvar automaticamente
+  const observer = new MutationObserver(() => {
+    salvarKanbanHTML();
+  });
 
-  
-  
-  
+  observer.observe(kanban, {
+    childList: true,
+    subtree: true,
+    characterData: true,
+    attributes: true
+  });
+});

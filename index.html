@@ -47,36 +47,36 @@
             <i class="fa-solid fa-plus"></i>
         </button>
     </aside>
-   
-    <main class="kanban">
-        <dialog id="modalCard">
-            <div class="modalDiv">
-                <label for="inputTarefa">Insira sua tarefa:</label>
-                <input id="inputTarefa" type="text" required>
+    <dialog id="modalCard">
+        <div class="modalDiv">
+            <label for="inputTarefa">Insira sua tarefa:</label>
+            <input id="inputTarefa" type="text" required>
 
-                <label for="dropDown">Escolha sua prioridade:</label>
-                <select name="dropDownPrioridade" id="dropDown_prioridade" required>
-                    <option value="low">baixa prioridade</option>
-                    <option value="medium">média prioridade</option>
-                    <option value="high">alta prioridade</option>
-                </select>
+            <label for="dropDown">Escolha sua prioridade:</label>
+            <select name="dropDownPrioridade" id="dropDown_prioridade" required>
+                <option value="low">baixa prioridade</option>
+                <option value="medium">média prioridade</option>
+                <option value="high">alta prioridade</option>
+            </select>
 
-                <label for="dropDown">Escolha seu estado atual:</label>
-                <select name="dropDownPrioridade" id="dropDown_estado" required>
-                    <option value="pendente">Pendente</option>
-                    <option value="front-end">Front-end</option>
-                    <option value="back-end">Back-end</option>
-                    <option value="teste">Em teste</option>
-                    <option value="concluido">Concluído</option>
+            <label for="dropDown">Escolha seu estado atual:</label>
+            <select name="dropDownPrioridade" id="dropDown_estado" required>
+                <option value="pendente">Pendente</option>
+                <option value="front-end">Em andamento</option>
+                <option value="back-end">Homologação</option>
+                <option value="teste">Concluído</option>
+                <option value="concluido">Impedido</option>
 
-                </select>
+            </select>
 
-                <div class="botoesModal">
-                    <button id="fecharModal" class="botaoDesign">Cancelar</button>
-                    <button id="inserirModal" class="botaoDesign">Inserir</button>
-                </div>
+            <div class="botoesModal">
+                <button id="fecharModal" class="botaoDesign">Cancelar</button>
+                <button id="inserirModal" class="botaoDesign">Inserir</button>
             </div>
-        </dialog>
+        </div>
+    </dialog>
+    <main class="kanban">
+        
         <div class="kanban-column kanban1">
             <div class="kanban-title">
                 <h2>Pendente</h2>
@@ -217,7 +217,7 @@
 
         <div class="kanban-column kanban2">
             <div class="kanban-title">
-                <h2>Em front-end</h2>
+                <h2>Em andamento</h2>
 
             </div>
             <div class="kanban-cards">
@@ -289,7 +289,7 @@
 
         <div class="kanban-column kanban3">
             <div class="kanban-title">
-                <h2>Em back-end</h2>
+                <h2>Homologação</h2>
 
             </div>
             <div class="kanban-cards">
@@ -330,7 +330,7 @@
 
         <div class="kanban-column kanban4">
             <div class="kanban-title">
-                <h2>Em teste</h2>
+                <h2>Concluído</h2>
 
             </div>
             <div class="kanban-cards">
@@ -371,7 +371,7 @@
 
         <div class="kanban-column kanban5">
             <div class="kanban-title">
-                <h2>Concluído</h2>
+                <h2>Impedido</h2>
 
             </div>
             <div class="kanban-cards">
