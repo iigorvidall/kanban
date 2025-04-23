@@ -371,6 +371,7 @@
       justify-content: space-around;
       align-items: center;
       z-index: 999;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .topSide{
@@ -391,5 +392,11 @@
     .fa-gear{
       font-size: 24px;
     }
+}
+
+@media (max-width:375px){
+  .sidebar{
+    gap: 0px;
+  }
 }
   
