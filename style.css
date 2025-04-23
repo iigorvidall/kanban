@@ -371,7 +371,8 @@
       justify-content: space-around;
       align-items: center;
       z-index: 999;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 10px 4px 10px 8px #2e2e2e41;
+      gap: 0px;
     }
 
     .topSide{
@@ -382,6 +383,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      
     }
 
     .kanban{
