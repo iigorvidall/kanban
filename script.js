@@ -122,7 +122,7 @@ if (dragCard) {
           e.currentTarget.classList.remove('dragging');
         });
       });
-    
+      adicionarEventoRemover();
       modalCard.close();
       limparInputs();
     }
@@ -162,6 +162,21 @@ if (dragCard) {
       limparInputs();
     }
 })
+
+function adicionarEventoRemover() {
+  document.querySelectorAll('.btn-remover').forEach(button => {
+    button.addEventListener('click', (e) => {
+      const card = e.target.closest('.kanban-card');
+      if (card) {
+        card.remove();
+      }
+    });
+  });
+}
+
+// Chamada inicial para os cards existentes:
+adicionarEventoRemover();
+
 
 
 

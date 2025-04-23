@@ -163,6 +163,7 @@
     font-size: 12px;
     padding: 4px 8px;
     border-radius: 12px;
+    transition: 0.2s ease-in-out;
   }
   
   .badge.high {
@@ -305,6 +306,35 @@
   .botaoCentral, .configMobile, .topSide{
     display: none;
   }
+
+  .btn-remover {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+  }
+
+  .kanban-card:hover .btn-remover{
+    opacity: 1;
+  }
+
+  .kanban-card:hover .badge{
+    padding: 6px 10px;
+  }
+  
+ 
+  
+  .kanban-card {
+    position: relative; /* necessário para posicionar o botão */
+  }
+  
 
   /*-----------RESPONSIVIDADE-----------*/
 
