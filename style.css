@@ -364,10 +364,13 @@
     .sidebar{
       flex-direction: row;
       width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
       height: 60px;
       justify-content: space-around;
       align-items: center;
-
+      z-index: 999;
     }
 
     .topSide{
@@ -382,6 +385,7 @@
 
     .kanban{
       padding-top: 10px;
+      padding-bottom: 70px;
     }
 
     .fa-gear{
