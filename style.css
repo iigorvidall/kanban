@@ -355,6 +355,7 @@
 
     .botaoCentral, .configMobile{
       display: block;
+      font-size: 16px;
     }
 
     .mobile, .config{
