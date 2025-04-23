@@ -141,9 +141,9 @@ function adicionarEventoRemover() {
     });
   });
 }
-/*
-adicionarEventoRemover();
 
+adicionarEventoRemover();
+/*
 function debounce(func, delay) {
   let timer;
   return function () {
