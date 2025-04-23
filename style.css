@@ -345,7 +345,8 @@
   @media (max-width: 767px) {
     body{
       flex-direction: column-reverse;
-      height: 95vh;
+      justify-content: space-between;
+
     }
 
     .sidebar picture{
@@ -385,7 +386,7 @@
 
     .kanban{
       padding-top: 10px;
-      height: 100% !important;
+      height: 550px !important;
     }
 
     .fa-gear{
