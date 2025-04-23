@@ -98,9 +98,6 @@ if (dragCard) {
       const cardsInsert = document.querySelector(selector);
       cardsInsert.insertAdjacentHTML("beforeend", `
         <div class="kanban-card" draggable="true">
-          <button class="btn-remover" title="Remover card">
-                        <i class="fa-solid fa-trash"></i>
-          </button>
           <div class="badge ${dadosPrioridade}">
             <span>${dadosPrioridadeNovo}</span>
           </div>
@@ -126,19 +123,6 @@ if (dragCard) {
         });
       });
       adicionarEventoRemover();
-      modalCard.close();
-      limparInputs();
-    }
-
-      document.querySelectorAll('.kanban-card').forEach(card => {
-        card.addEventListener('dragstart', e => {
-          e.currentTarget.classList.add('dragging');
-        });
-        card.addEventListener('dragend', e => {
-          e.currentTarget.classList.remove('dragging');
-        });
-      });
-    
       modalCard.close();
       limparInputs();
     }
