@@ -364,9 +364,6 @@
     .sidebar{
       flex-direction: row;
       width: 100%;
-      position: fixed;
-      bottom: 0;
-      left: 0;
       height: 60px;
       justify-content: space-around;
       align-items: center;
