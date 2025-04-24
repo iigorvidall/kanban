@@ -345,8 +345,6 @@
   @media (max-width: 767px) {
     body{
       flex-direction: column;
-      justify-content: space-between;
-
     }
 
     .sidebar picture{
@@ -370,7 +368,9 @@
       align-items: center;
       box-shadow: 10px 4px 10px 8px #2e2e2e41;
       gap: 0px;
-
+      position: fixed;
+      z-index: 100;
+      top: 0;
     }
 
     .topSide{
@@ -379,8 +379,8 @@
 
     .kanban{
       padding-top: 10px;
-      height: 90% !important;
-      margin-top: 20px;
+      height: 700px !important;
+      margin-top: 60px;
     }
 
     .fa-gear{
