@@ -344,7 +344,7 @@
 
   @media (max-width: 767px) {
     body{
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: space-between;
 
     }
@@ -358,7 +358,7 @@
       font-size: 16px;
     }
 
-    .mobile, .config{
+    .mobile{
       display: none;
     }
 
@@ -370,24 +370,17 @@
       align-items: center;
       box-shadow: 10px 4px 10px 8px #2e2e2e41;
       gap: 0px;
-      position: fixed;
-      z-index: 10;
+
     }
 
     .topSide{
-      width: 100%;
-      padding-inline: 24px;
-      padding-top: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      display: none;
     }
 
     .kanban{
       padding-top: 10px;
-      height: 450px !important;
-      margin-bottom: 80px;
+      height: 90% !important;
+      margin-top: 20px;
     }
 
     .fa-gear{
