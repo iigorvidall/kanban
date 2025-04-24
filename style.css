@@ -370,6 +370,8 @@
       align-items: center;
       box-shadow: 10px 4px 10px 8px #2e2e2e41;
       gap: 0px;
+      position: fixed;
+      z-index: 10;
     }
 
     .topSide{
@@ -380,12 +382,12 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      
     }
 
     .kanban{
       padding-top: 10px;
-      height: 550px !important;
+      height: 650px !important;
+      margin-bottom: 80px;
     }
 
     .fa-gear{
