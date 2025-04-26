@@ -1,0 +1,21 @@
+{
+    "name": "api/kanban",
+    "description": "API para o projeto do Kanban do Igor Vidal - https://github.com/iigorvidall",
+    "autoload": {
+        "psr-4": {
+            "Api\\Kanban\\": "src/",
+            "Controllers\\": "src/controllers/",
+            "DAO\\": "src/DAO/",
+            "Models\\": "src/models/",
+            "Rn\\": "src/rn/",
+            "Utils\\": "src/util/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danilo Franco",
+            "email": "engdanilofranco@gmail.com"
+        }
+    ],
+    "require": {}
+}
