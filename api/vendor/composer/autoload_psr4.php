@@ -9,6 +9,7 @@ return array(
     'Utils\\' => array($baseDir . '/src/util'),
     'Rn\\' => array($baseDir . '/src/rn'),
     'Models\\' => array($baseDir . '/src/models'),
+    'Interfaces\\' => array($baseDir . '/src/DAO/interfaces'),
     'DAO\\' => array($baseDir . '/src/DAO'),
     'Controllers\\' => array($baseDir . '/src/controllers'),
     'Api\\Kanban\\' => array($baseDir . '/src'),

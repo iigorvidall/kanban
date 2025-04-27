@@ -8,7 +8,8 @@
             "DAO\\": "src/DAO/",
             "Models\\": "src/models/",
             "Rn\\": "src/rn/",
-            "Utils\\": "src/util/"
+            "Utils\\": "src/util/",
+            "Interfaces\\": "src/DAO/interfaces/"
         }
     },
     "authors": [

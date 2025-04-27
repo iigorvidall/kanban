@@ -19,6 +19,10 @@ class ComposerStaticInit1b3fe41851b20603671f47fcf0650709
         array (
             'Models\\' => 7,
         ),
+        'I' => 
+        array (
+            'Interfaces\\' => 11,
+        ),
         'D' => 
         array (
             'DAO\\' => 4,
@@ -45,6 +49,10 @@ class ComposerStaticInit1b3fe41851b20603671f47fcf0650709
         'Models\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/models',
+        ),
+        'Interfaces\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/DAO/interfaces',
         ),
         'DAO\\' => 
         array (

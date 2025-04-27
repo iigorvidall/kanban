@@ -14,8 +14,13 @@ class Tarefa implements JsonSerializable{
     private $dataCriacao;
     private $dataConclusao;
 
-    function __construct(){
-        
+    function __construct($idTarefa, $titulo, $descricao, $status, $dataCriacao, $dataConclusao){
+        $this->setIdTarefa($idTarefa);
+        $this->setTitulo($titulo);
+        $this->setDescricao($descricao);
+        $this->setStatus($status);
+        $this->setDataCriacao($dataCriacao);
+        $this->setDataConclusao($dataConclusao);
     }
 
     //setters

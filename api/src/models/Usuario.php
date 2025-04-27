@@ -13,8 +13,11 @@ class Usuario implements JsonSerializable{
     private $senha;
     private $dataCadastro;
 
-    function __construct(){
-
+    function __construct($idUsuario, $nome, $email, $senha, $dataCadastro){
+        $this->setIdUsuario($idUsuario);
+        $this->setNomeUsuario($nome);
+        $this->setEmail($email);
+        $this->setDataCadastro($dataCadastro);
     }
 
     //setters
