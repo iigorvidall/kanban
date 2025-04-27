@@ -11,10 +11,11 @@ class Tarefa implements JsonSerializable{
     private $titulo;
     private $descricao;
     private $status;
+    private $fkQuadro;
     private $dataCriacao;
     private $dataConclusao;
 
-    function __construct($idTarefa, $titulo, $descricao, $status, $dataCriacao, $dataConclusao){
+    function __construct($idTarefa, $titulo, $descricao, $status, $fkQuadro, $dataCriacao, $dataConclusao){
         $this->setIdTarefa($idTarefa);
         $this->setTitulo($titulo);
         $this->setDescricao($descricao);
@@ -38,6 +39,10 @@ class Tarefa implements JsonSerializable{
 
     function setStatus($status){
         $this->status = $status;
+    }
+
+    function setFkQuadro($fkQuadro){
+        $this->fkQuadro = $fkQuadro;
     }
 
     function setDataCriacao($dataCriacao){
@@ -64,6 +69,10 @@ class Tarefa implements JsonSerializable{
 
     function getStatus(){
         return $this->status;
+    }
+
+    function getFkQuadro(){
+        return $this->fkQuadro;
     }
 
     function getDataCriacao(){
