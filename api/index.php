@@ -3,6 +3,8 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 //controladores
+
+use Controllers\EvaluateController;
 use Controllers\UsuarioController;
 
 //Utils
@@ -19,6 +21,9 @@ if (!empty($url)) {
     $acao = isset($url_parts[1]) ? $url_parts[1] : 'index';
     
     switch ($recurso) {
+        case 'evaluate':
+            $controller = new EvaluateController();
+            break;
         case 'usuario':            
             $controller = new UsuarioController();//instanciar o controlardor aqui
             break;          
