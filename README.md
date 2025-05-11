@@ -1,6 +1,6 @@
 # 🧩 Projeto Kanban com HTML, CSS e JavaScript
 
- **[Acesse a versão ao vivo do projeto](https://iigorvidall.github.io/projeto-quadro-kanban/)**
+ **[Acesse a demonstração do projeto](https://iigorvidall.github.io/projeto-quadro-kanban/)**
 
 Este é um dashboard **Kanban totalmente funcional**, desenvolvido com **HTML, CSS e JavaScript puros**, sem o uso de frameworks ou bibliotecas externas. O sistema é **100% responsivo** e permite **arrastar e soltar tarefas entre as colunas** com fluidez e simplicidade.
 
